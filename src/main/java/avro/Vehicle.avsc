@@ -1,0 +1,47 @@
+{
+  "namespace": "model",
+  "type": "record",
+  "name": "Vehicle",
+  "fields": [
+    {
+      "name": "uuid",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "registrationNumber",
+      "type": "string"
+    },
+    {
+      "name": "driverName",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "bodyType",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "chassisType",
+      "type": "string"
+    },
+    {
+      "name": "carryingCapacity",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}
