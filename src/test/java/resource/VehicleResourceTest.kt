@@ -1,6 +1,7 @@
 package resource
 
 import com.fasterxml.jackson.databind.ObjectMapper
+import com.fretron.vehiclemanager.resource.VehicleResource
 import com.nhaarman.mockito_kotlin.any
 import com.nhaarman.mockito_kotlin.whenever
 import di.component.DaggerVehicleAppTestComponent
@@ -11,7 +12,7 @@ import org.json.JSONObject
 import org.junit.*
 import org.junit.Assert.*
 import org.mockito.Mockito.mock
-import service.VehicleService
+import com.fretron.vehiclemanager.service.VehicleService
 import javax.ws.rs.client.Entity
 import javax.ws.rs.core.Application
 import javax.ws.rs.core.MediaType

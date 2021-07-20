@@ -6,7 +6,8 @@ import com.mongodb.client.MongoDatabase
 import helper.EmbeddedMongoDb
 import helper.TestData
 import org.junit.Assert.*
-import model.Vehicle
+import com.fretron.vehiclemanager.model.Vehicle
+import com.fretron.vehiclemanager.repository.VehicleRepository
 import org.junit.After
 import org.junit.Before
 import org.junit.Test

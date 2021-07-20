@@ -1,8 +1,8 @@
-package resource
+package com.fretron.vehiclemanager.resource
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import model.Vehicle
-import service.VehicleService
+import com.fretron.vehiclemanager.model.Vehicle
+import com.fretron.vehiclemanager.service.VehicleService
 import java.lang.Exception
 import javax.inject.Inject
 import javax.ws.rs.*

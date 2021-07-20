@@ -1,11 +1,11 @@
-package di.module
+package com.fretron.vehiclemanager.di.module
 
 import dagger.Module
 import dagger.Provides
 import org.glassfish.grizzly.http.server.HttpServer
 import org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpServerFactory
 import org.glassfish.jersey.server.ResourceConfig
-import resource.VehicleResource
+import com.fretron.vehiclemanager.resource.VehicleResource
 import javax.inject.Named
 import javax.ws.rs.core.UriBuilder
 import javax.ws.rs.ext.ExceptionMapper
@@ -15,8 +15,8 @@ import javax.ws.rs.ext.ExceptionMapper
 class HttpModule {
 
     @Provides
-    fun provideResource(vehicleResource: VehicleResource ):ResourceConfig{
-        return ResourceConfig().register(vehicleResource).register(exception.ExceptionMapper())
+    fun provideResource(vehicleResource: VehicleResource):ResourceConfig{
+        return ResourceConfig().register(vehicleResource).register(com.fretron.vehiclemanager.exception.ExceptionMapper())
     }                                 //vehicleResource::class.java
 
     @Provides

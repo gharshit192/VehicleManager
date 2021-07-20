@@ -1,14 +1,14 @@
 package service
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.nhaarman.mockito_kotlin.any
 import com.nhaarman.mockito_kotlin.whenever
 import helper.TestData
-import model.Vehicle
+import com.fretron.vehiclemanager.model.Vehicle
 import org.junit.Assert.*
 import org.junit.Test
 import org.mockito.Mockito.mock
-import repository.VehicleRepository
+import com.fretron.vehiclemanager.repository.VehicleRepository
+import com.fretron.vehiclemanager.service.VehicleService
 
 
 class VehicleServiceTest {

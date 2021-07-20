@@ -1,4 +1,4 @@
-package repository
+package com.fretron.vehiclemanager.repository
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.mongodb.BasicDBObject
@@ -6,12 +6,10 @@ import com.mongodb.client.MongoCollection
 import com.mongodb.client.MongoDatabase
 import com.mongodb.client.model.Filters
 import com.mongodb.util.JSON
-import exception.IllegalException
-import exception.IllegalTypeException
-import exception.VehicleException
-import model.Vehicle
+import com.fretron.vehiclemanager.exception.IllegalTypeException
+import com.fretron.vehiclemanager.exception.VehicleException
+import com.fretron.vehiclemanager.model.Vehicle
 import org.bson.Document
-import org.bson.conversions.Bson
 import javax.inject.Inject
 
 class VehicleRepository @Inject constructor(

@@ -1,5 +1,4 @@
-import di.component.DaggerVehicleAppComponent
-import java.lang.Exception
+import com.fretron.vehiclemanager.di.component.DaggerVehicleAppComponent
 
 fun main() {
         val component = DaggerVehicleAppComponent.builder().build()

@@ -1,4 +1,4 @@
-package exception
+package com.fretron.vehiclemanager.exception
 
 import java.lang.RuntimeException
 

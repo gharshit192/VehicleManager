@@ -1,8 +1,7 @@
-package service
+package com.fretron.vehiclemanager.service
 
-import exception.IllegalException
-import model.Vehicle
-import repository.VehicleRepository
+import com.fretron.vehiclemanager.model.Vehicle
+import com.fretron.vehiclemanager.repository.VehicleRepository
 import java.lang.Exception
 import java.util.*
 import javax.inject.Inject

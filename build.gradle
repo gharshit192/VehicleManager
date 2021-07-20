@@ -100,7 +100,18 @@ dependencies {
     implementation "org.apache.logging.log4j:log4j-core:2.12.0"
     implementation "org.apache.logging.log4j:log4j-api:2.12.0"
 }
+task fatJar(type: Jar) {
+    manifest {
+        attributes 'Implementation-Title': 'VehicleManager',
+                'Implementation-Version': archiveVersion ,
+                'Main-Class': 'com.fretron.vehiclemanager.ApplicationKt'
+    }
+    baseName = project.name + '-all'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+    exclude ('META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA')
 
+}
 kapt.includeCompileClasspath = false
 
 test {

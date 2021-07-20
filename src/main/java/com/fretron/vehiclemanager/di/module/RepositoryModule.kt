@@ -1,10 +1,10 @@
-package di.module
+package com.fretron.vehiclemanager.di.module
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.mongodb.client.MongoDatabase
 import dagger.Module
 import dagger.Provides
-import repository.VehicleRepository
+import com.fretron.vehiclemanager.repository.VehicleRepository
 
 @Module
 class RepositoryModule {

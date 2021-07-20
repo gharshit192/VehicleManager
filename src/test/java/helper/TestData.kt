@@ -1,7 +1,7 @@
 package helper
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import model.Vehicle
+import com.fretron.vehiclemanager.model.Vehicle
 
 object TestData {
     private var objectMapper = ObjectMapper()

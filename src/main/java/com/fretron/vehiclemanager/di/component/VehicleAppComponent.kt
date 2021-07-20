@@ -1,7 +1,7 @@
-package di.component
+package com.fretron.vehiclemanager.di.component
 
+import com.fretron.vehiclemanager.di.module.*
 import dagger.Component
-import di.module.*
 import org.glassfish.grizzly.http.server.HttpServer
 
 @Component(

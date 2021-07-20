@@ -1,4 +1,4 @@
-package di.module
+package com.fretron.vehiclemanager.di.module
 
 import dagger.Module
 import dagger.Provides

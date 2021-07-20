@@ -3,7 +3,7 @@
  *
  * DO NOT EDIT DIRECTLY
  */
-package model;
+package com.fretron.vehiclemanager.model;
 
 import org.apache.avro.specific.SpecificData;
 
@@ -173,8 +173,8 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
    * Creates a new Vehicle RecordBuilder.
    * @return A new Vehicle RecordBuilder
    */
-  public static model.Vehicle.Builder newBuilder() {
-    return new model.Vehicle.Builder();
+  public static Vehicle.Builder newBuilder() {
+    return new Vehicle.Builder();
   }
 
   /**
@@ -182,8 +182,8 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param other The existing builder to copy.
    * @return A new Vehicle RecordBuilder
    */
-  public static model.Vehicle.Builder newBuilder(model.Vehicle.Builder other) {
-    return new model.Vehicle.Builder(other);
+  public static Vehicle.Builder newBuilder(Vehicle.Builder other) {
+    return new Vehicle.Builder(other);
   }
 
   /**
@@ -191,8 +191,8 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
    * @param other The existing instance to copy.
    * @return A new Vehicle RecordBuilder
    */
-  public static model.Vehicle.Builder newBuilder(model.Vehicle other) {
-    return new model.Vehicle.Builder(other);
+  public static Vehicle.Builder newBuilder(Vehicle other) {
+    return new Vehicle.Builder(other);
   }
 
   /**
@@ -217,7 +217,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
      * Creates a Builder by copying an existing Builder.
      * @param other The existing Builder to copy.
      */
-    private Builder(model.Vehicle.Builder other) {
+    private Builder(Vehicle.Builder other) {
       super(other);
       if (isValidValue(fields()[0], other.uuid)) {
         this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
@@ -249,7 +249,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
      * Creates a Builder by copying an existing Vehicle instance
      * @param other The existing instance to copy.
      */
-    private Builder(model.Vehicle other) {
+    private Builder(Vehicle other) {
             super(SCHEMA$);
       if (isValidValue(fields()[0], other.uuid)) {
         this.uuid = data().deepCopy(fields()[0].schema(), other.uuid);
@@ -290,7 +290,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'uuid'.
       * @return This builder.
       */
-    public model.Vehicle.Builder setUuid(java.lang.CharSequence value) {
+    public Vehicle.Builder setUuid(java.lang.CharSequence value) {
       validate(fields()[0], value);
       this.uuid = value;
       fieldSetFlags()[0] = true;
@@ -310,7 +310,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'uuid' field.
       * @return This builder.
       */
-    public model.Vehicle.Builder clearUuid() {
+    public Vehicle.Builder clearUuid() {
       uuid = null;
       fieldSetFlags()[0] = false;
       return this;
@@ -329,7 +329,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'registrationNumber'.
       * @return This builder.
       */
-    public model.Vehicle.Builder setRegistrationNumber(java.lang.CharSequence value) {
+    public Vehicle.Builder setRegistrationNumber(java.lang.CharSequence value) {
       validate(fields()[1], value);
       this.registrationNumber = value;
       fieldSetFlags()[1] = true;
@@ -349,7 +349,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'registrationNumber' field.
       * @return This builder.
       */
-    public model.Vehicle.Builder clearRegistrationNumber() {
+    public Vehicle.Builder clearRegistrationNumber() {
       registrationNumber = null;
       fieldSetFlags()[1] = false;
       return this;
@@ -368,7 +368,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'driverName'.
       * @return This builder.
       */
-    public model.Vehicle.Builder setDriverName(java.lang.CharSequence value) {
+    public Vehicle.Builder setDriverName(java.lang.CharSequence value) {
       validate(fields()[2], value);
       this.driverName = value;
       fieldSetFlags()[2] = true;
@@ -388,7 +388,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'driverName' field.
       * @return This builder.
       */
-    public model.Vehicle.Builder clearDriverName() {
+    public Vehicle.Builder clearDriverName() {
       driverName = null;
       fieldSetFlags()[2] = false;
       return this;
@@ -407,7 +407,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'bodyType'.
       * @return This builder.
       */
-    public model.Vehicle.Builder setBodyType(java.lang.CharSequence value) {
+    public Vehicle.Builder setBodyType(java.lang.CharSequence value) {
       validate(fields()[3], value);
       this.bodyType = value;
       fieldSetFlags()[3] = true;
@@ -427,7 +427,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'bodyType' field.
       * @return This builder.
       */
-    public model.Vehicle.Builder clearBodyType() {
+    public Vehicle.Builder clearBodyType() {
       bodyType = null;
       fieldSetFlags()[3] = false;
       return this;
@@ -446,7 +446,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'chassisType'.
       * @return This builder.
       */
-    public model.Vehicle.Builder setChassisType(java.lang.CharSequence value) {
+    public Vehicle.Builder setChassisType(java.lang.CharSequence value) {
       validate(fields()[4], value);
       this.chassisType = value;
       fieldSetFlags()[4] = true;
@@ -466,7 +466,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'chassisType' field.
       * @return This builder.
       */
-    public model.Vehicle.Builder clearChassisType() {
+    public Vehicle.Builder clearChassisType() {
       chassisType = null;
       fieldSetFlags()[4] = false;
       return this;
@@ -485,7 +485,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       * @param value The value of 'carryingCapacity'.
       * @return This builder.
       */
-    public model.Vehicle.Builder setCarryingCapacity(java.lang.CharSequence value) {
+    public Vehicle.Builder setCarryingCapacity(java.lang.CharSequence value) {
       validate(fields()[5], value);
       this.carryingCapacity = value;
       fieldSetFlags()[5] = true;
@@ -505,7 +505,7 @@ public class Vehicle extends org.apache.avro.specific.SpecificRecordBase impleme
       * Clears the value of the 'carryingCapacity' field.
       * @return This builder.
       */
-    public model.Vehicle.Builder clearCarryingCapacity() {
+    public Vehicle.Builder clearCarryingCapacity() {
       carryingCapacity = null;
       fieldSetFlags()[5] = false;
       return this;

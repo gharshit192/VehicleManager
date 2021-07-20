@@ -1,10 +1,10 @@
-package di.module
+package com.fretron.vehiclemanager.di.module
 
 import com.fasterxml.jackson.databind.ObjectMapper
 import dagger.Module
 import dagger.Provides
-import resource.VehicleResource
-import service.VehicleService
+import com.fretron.vehiclemanager.resource.VehicleResource
+import com.fretron.vehiclemanager.service.VehicleService
 
 @Module
 class ResourceModule {
